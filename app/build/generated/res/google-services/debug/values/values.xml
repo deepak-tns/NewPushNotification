@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">698818577927-rie70lajigg7k92ft8om89fc3se0h03i.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://gnclinic-ad8ec.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">698818577927</string>
+    <string name="google_api_key" translatable="false">AIzaSyC9AwftVOF5yY98Eiv6pinWAfZRR6sFxag</string>
+    <string name="google_app_id" translatable="false">1:698818577927:android:d10dafeb723fe120</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC9AwftVOF5yY98Eiv6pinWAfZRR6sFxag</string>
+    <string name="google_storage_bucket" translatable="false">gnclinic-ad8ec.appspot.com</string>
+    <string name="project_id" translatable="false">gnclinic-ad8ec</string>
+</resources>

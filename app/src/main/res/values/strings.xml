@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GNClinic</string>
+    <string name="fcm_token">FCM Token: %s</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_title" translatable="true">Weather</string>
+
+</resources>

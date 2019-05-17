@@ -1,0 +1,4 @@
+#Fri May 17 11:05:34 IST 2019
+base.0=D\:\\Android Project\\GNClinic\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\9
+path.0=classes.dex
+renamed.0=classes.dex
