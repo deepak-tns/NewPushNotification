@@ -6,6 +6,8 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -15,6 +17,10 @@ import android.util.Log;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
+
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
@@ -34,7 +40,10 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         Log.d(TAG, "From: " + remoteMessage.getFrom());
         if (remoteMessage.getData().size() > 0) {
        //     handleDataNotification(remoteMessage.getData().toString());
+            String imageUri = remoteMessage.getData().get("image");
             Log.d(TAG, "Message data payload: " + remoteMessage.getData());
+            createNotification(remoteMessage.getData().get("body"),imageUri,getApplicationContext());
+
         }
         if (remoteMessage.getNotification() != null) {
             Log.d(TAG, "Message Notification Body: " + remoteMessage.getNotification().getBody());
@@ -45,6 +54,23 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         // displayNotification(remoteMessage.getNotification().getBody());
     }
 
+    public Bitmap getBitmapfromUrl(String imageUrl) {
+        try {
+            URL url = new URL(imageUrl);
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setDoInput(true);
+            connection.connect();
+            InputStream input = connection.getInputStream();
+            Bitmap bitmap = BitmapFactory.decodeStream(input);
+            return bitmap;
+
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+            return null;
+
+        }
+    }
     private NotificationManager notifManager;
     public void createNotification(String aMessage,String tittlename, Context context) {
         final int NOTIFY_ID = 0; // ID of notification
@@ -72,6 +98,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             builder.setContentTitle(tittlename)                            // required
                     .setSmallIcon(android.R.drawable.ic_popup_reminder)   // required
                     .setContentText(aMessage) // required
+                    .setLargeIcon(getBitmapfromUrl(tittlename))/*Notification icon image*/
                     .setDefaults(Notification.DEFAULT_ALL)
                     .setAutoCancel(true)
                     .setContentIntent(pendingIntent)
@@ -86,6 +113,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             builder.setContentTitle(tittlename)                            // required
                     .setSmallIcon(android.R.drawable.ic_popup_reminder)   // required
                     .setContentText(aMessage) // required
+                    .setLargeIcon(getBitmapfromUrl(tittlename))/*Notification icon image*/
                     .setDefaults(Notification.DEFAULT_ALL)
                     .setAutoCancel(true)
                     .setContentIntent(pendingIntent)
