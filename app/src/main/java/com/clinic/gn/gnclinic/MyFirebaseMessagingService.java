@@ -96,7 +96,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
             builder.setContentTitle(tittlename)                            // required
-                    .setSmallIcon(android.R.drawable.ic_popup_reminder)   // required
+                    .setSmallIcon(R.drawable.lp)   // required
                     .setContentText(aMessage) // required
                     .setLargeIcon(getBitmapfromUrl(tittlename))/*Notification icon image*/
                     .setDefaults(Notification.DEFAULT_ALL)
@@ -111,7 +111,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
             pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
             builder.setContentTitle(tittlename)                            // required
-                    .setSmallIcon(android.R.drawable.ic_popup_reminder)   // required
+                    .setSmallIcon(R.drawable.lp)   // required
                     .setContentText(aMessage) // required
                     .setLargeIcon(getBitmapfromUrl(tittlename))/*Notification icon image*/
                     .setDefaults(Notification.DEFAULT_ALL)

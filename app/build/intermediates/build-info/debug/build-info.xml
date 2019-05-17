@@ -2,47 +2,88 @@
 <instant-run
     abi="x86"
     api-level="28"
-    build-mode="COLD"
+    build-mode="FULL"
     density="560dpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
     plugin-version="3.3.1"
-    timestamp="1558077966659"
+    timestamp="1558089917301"
     token="-3426939954501676813"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="481" />
+        duration="2311" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="75" />
+        duration="228" />
     <task
         name="verifier"
-        duration="16" />
+        duration="85" />
 
+    <artifact
+        location="D:\Android Project\GNClinic\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+        type="SPLIT" />
     <artifact
         location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
         type="SPLIT" />
+    <artifact
+        location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Android Project\GNClinic\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1558075632689"
+        timestamp="1558089917301"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="D:\Android Project\GNClinic\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
             location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
             location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
@@ -51,19 +92,13 @@
             location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Android Project\GNClinic\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-            type="SPLIT" />
-        <artifact
             location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
             location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
@@ -71,15 +106,6 @@
         <artifact
             location="D:\Android Project\GNClinic\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1558077966659"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="D:\Android Project\GNClinic\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-            type="SPLIT" />
     </build>
 
 </instant-run>
